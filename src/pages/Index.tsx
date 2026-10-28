@@ -250,10 +250,10 @@ export default function Home() {
           <p className="text-lg text-[#7D3A73] mb-8 max-w-2xl mx-auto leading-relaxed">
             {shroudContent.hero.subtitle}
           </p>
-          <blockquote className="inline-block border-l-4 border-[#FF69B4] pl-4 pb-2 mb-6 text-[#6B2A5A] italic text-base">
+          <blockquote className="inline-block border-l-4 border-[#FF69B4] pl-4 pb-2 mb-8 text-[#6B2A5A] italic text-base">
             "He is not here; he has risen!" — Luke 24:6
           </blockquote>
-          <button className="px-8 py-3 bg-[#FF69B4] text-white font-medium rounded-full hover:bg-[#FF1C92] transition-colors">
+          <button className="px-8 py-3 bg-[#FF69B4] text-white font-medium rounded-full hover:bg-[#FF1C92] transition-colors mt-8">
             {shroudContent.hero.buttonText}
           </button>
         </div>
