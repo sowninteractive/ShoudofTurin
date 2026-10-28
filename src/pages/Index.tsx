@@ -1,75 +1,198 @@
 import React from "react";
-import "../App.css";
+import "./App.css";
 
-// Shroud of Turin quotes and information
+// Shroud of Turin comprehensive content
 const shroudContent = {
   hero: {
     title: "The Shroud of Turin",
     subtitle: "A Divine Mystery",
-    claim: "Scientific evidence confirms its authenticity as Christ's burial cloth",
+    claim: "Scientific evidence and historical research examine its authenticity as Christ's burial cloth",
     buttonText: "Explore the Evidence"
   },
   sections: [
     {
-      id: "scientific",
-      title: "Scientific Evidence",
+      id: "physical",
+      title: "Physical Characteristics",
       items: [
         {
-          icon: "🔬",
-          title: "Blood Type AB",
-          description: "The bloodstains on the shroud all match type AB, rare and consistent with Middle Eastern populations"
+          icon: "📏",
+          title: "Dimensions",
+          description: "Approximately 4.4 meters long and 1.1 meters wide - a large linen cloth"
         },
         {
-          icon: "🧪",
-          title: "Pollen Analysis",
-          description: "Pollen grains unique to the Jerusalem region were found, indicating the cloth's origin"
+          icon: "🧵",
+          title: "Material",
+          description: "Woven linen fabric, consistent with 1st-century Judean burial cloths"
         },
         {
-          icon: "📊",
-          title: "Carbon Dating",
-          description: "1988 carbon dating placed the cloth in the 1st century AD, aligning with biblical timelines"
+          icon: "👤",
+          title: "Frontal & Dorsal Images",
+          description: "Body images of a man appearing on both front and back of the cloth, showing full body length"
+        },
+        {
+          icon: "🩸",
+          title: "Bloodstains",
+          description: "Reddish-brown stains interpreted as blood, type AB in several areas"
         }
       ]
     },
     {
-      id: "history",
+      id: "scientific",
+      title: "Scientific Discoveries",
+      items: [
+        {
+          icon: "📸",
+          title: "Photographic Negative Effect",
+          description: "1898: Secondo Pia's photographs revealed the image appears more naturally on the negative than on the cloth itself"
+        },
+        {
+          icon: "🔬",
+          title: "3D Information Encoding",
+          description: "Image intensity correlates with distance from cloth to body, containing three-dimensional information (Jackson, Jumper & Ercoline, 1984)"
+        },
+        {
+          icon: "👁️",
+          title: "Extreme Superficiality",
+          description: "Coloration concentrated in outermost portions of linen fibers - exceptionally superficial image formation"
+        },
+        {
+          icon: "📊",
+          title: "STURP Investigation (1978)",
+          description: "Major multidisciplinary study using microscopy, spectroscopy, photography and chemical analysis. No conventional pigment-based painting adequately explained the image characteristics."
+        }
+      ]
+    },
+    {
+      id: "anatomical",
+      title: "Anatomical Wounds",
+      items: [
+        {
+          icon: "⚔️",
+          title: "Scourging Marks",
+          description: "Numerous markings across back and body regions consistent with Roman scourging (Matthew 27:26, Mark 15:15, John 19:1)"
+        },
+        {
+          icon: "👑",
+          title: "Crown of Thorns Wounds",
+          description: "Head image markings interpreted as wounds from sharp objects penetrating scalp (Matthew 27:29, Mark 15:17, John 19:2)"
+        },
+        {
+          icon: "🩹",
+          title: "Wrist & Forearm Bloodstains",
+          description: "Stains examined via forensic approaches (2024 study); patterns relate to wound location and body position"
+        },
+        {
+          icon: "🦶",
+          title: "Feet & Crucifixion Wounds",
+          description: "Lower-body markings consistent with crucifixion (Matthew 27:35, Mark 15:24-25, Luke 23:33, John 19:18)"
+        },
+        {
+          icon: "⚔️",
+          title: "Side Wound",
+          description: "Prominent torso stain associated with John 19:34 - soldier piercing Jesus' side"
+        }
+      ]
+    },
+    {
+      id: "dating",
+      title: "Dating & Research",
+      items: [
+        {
+          icon: "📅",
+          title: "1988 Carbon Dating",
+          description: "Placed cloth in 1st century AD, aligning with biblical timelines"
+        },
+        {
+          icon: "🔬",
+          title: "2022 X-Ray Dating Study",
+          description: "Wide-angle X-ray scattering (WAXS) examined cellulose degradation; thread properties compatible with ~2,000-year-old linen under specified conditions"
+        },
+        {
+          icon: "🧬",
+          title: "2015 DNA Study",
+          description: "Identified multiple human mitochondrial lineages and plant DNA from Western Europe, Near East, Arabian Peninsula and Indian subcontinent"
+        },
+        {
+          icon: "📊",
+          title: "2026 DNA Study",
+          description: "Examined official 1978 sample collection; identified predominant human lineage associated with Ashkenazi Jewish populations (K1a1b1a, H2a2, H1b, H33)"
+        },
+        {
+          icon: "🧵",
+          title: "2026 Textile-Fragment Analysis",
+          description: "Examined textile fragments from radiocarbon sampling; adds to study of physical composition and characteristics of sampled material"
+        }
+      ]
+    },
+    {
+      id: "historical",
       title: "Historical Journey",
       items: [
         {
           icon: "📜",
-          title: "First Century",
-          description: "Early church fathers described a cloth bearing Jesus' image, consistent with shroud features"
+          title: "European Provenance",
+          description: "Documented history in Europe: Lirey, France (14th century); Turin, Italy since 1578 in Cathedral of Saint John the Baptist"
         },
         {
-          icon: "🏛️",
-          title: "1354 Exhibition",
-          description: "The shroud first appeared publicly in Lirey, France, and was later transferred to Turin, Italy"
+          icon: "🏰",
+          title: "Edessa & Constantinople Connection",
+          description: "Image of Edessa/Mandylion tradition: transferred to Constantinople in 944 AD; proposed connection to Shroud through historical sequence involving tetradiplon folding, Eighth-century whole-body imagery, and Fourth Crusade 1204"
         },
         {
-          icon: "📍",
-          title: "Turin, Italy",
-          description: "Since 1578, the shroud has been housed in the Cathedral of Saint John the Baptist in Turin"
+          icon: "📖",
+          title: "Gospel Correspondence: Passion",
+          description: "Scourging (Matthew 27:26, Mark 15:15, John 19:1); Crown of thorns (Matthew 27:29, Mark 15:17, John 19:2); Crucifixion (Matthew 27:35, Mark 15:24-25, Luke 23:33, John 19:18); Side wound (John 19:34)"
+        },
+        {
+          icon: "📖",
+          title: "Gospel Correspondence: Burial",
+          description: "All four Gospels describe Jesus' body preparation for burial (Matthew 27:59, Mark 15:46, Luke 23:53, John 19:38-40); Shroud's linen material and front/dorsal image central to discussions"
         }
       ]
     },
     {
-      id: "faith",
-      title: "Religious Significance",
+      id: "cumulative",
+      title: "The Cumulative Case",
       items: [
         {
-          icon: "✝️",
-          title: "Papal Endorsements",
-          description: "Multiple popes have recognized the shroud as a powerful symbol of faith and resurrection"
+          icon: "⚖️",
+          title: "Physical & Photographic Evidence",
+          description: "Frontal/dorsal images, unusual photographic-negative appearance, image-intensity information associated with 3D body structure"
         },
         {
-          icon: "🙏",
-          title: "Resurrection Symbol",
-          description: "The image on the shroud depicts a man who suffered crucifixion, aligning with Gospel accounts"
+          icon: "🧪",
+          title: "Microscopic & Chemical Evidence",
+          description: "Body image exceptionally superficial; chemical/spectroscopic findings consistent with blood in apparent bloodstains"
         },
         {
-          icon: "🕯️",
-          title: "Pilgrimage Destination",
-          description: "Millions of pilgrims visit the shroud annually, finding spiritual comfort and inspiration"
+          icon: "🔬",
+          title: "Forensic Evidence",
+          description: "Scourging marks, head wounds, wrist/forearm stains, feet, side wound, body position examined"
+        },
+        {
+          icon: "🔬",
+          title: "Experimental Research",
+          description: "UV-laser experiments and bloodstain studies investigated physical processes relevant to image and stains"
+        },
+        {
+          icon: "📚",
+          title: "Textile & Dating Research",
+          description: "2022 X-ray dating, 2026 textile-fragment analysis; 2015/2026 DNA studies identified multiple human mitochondrial lineages alongside plant, animal and microbial traces"
+        },
+        {
+          icon: "💻",
+          title: "Computational Research",
+          description: "2025 digital 3D modeling study and 2026 scientific response added new work on image formation and need to account for image's physical properties"
+        },
+        {
+          icon: "📜",
+          title: "Historical Evidence",
+          description: "Documented European history and proposed connections to earlier traditions (Edessa/Constantineline)"
+        },
+        {
+          icon: "📖",
+          title: "Biblical Correspondence",
+          description: "Apparent wounds and linen burial cloth compared with Gospel accounts of scourging, crucifixion, piercing and burial"
         }
       ]
     }
@@ -77,9 +200,12 @@ const shroudContent = {
 };
 
 const navLinks = [
-  { href: "#scientific", label: "Evidence" },
-  { href: "#history", label: "History" },
-  { href: "#faith", label: "Faith" }
+  { href: "#physical", label: "Physical" },
+  { href: "#scientific", label: "Scientific" },
+  { href: "#anatomical", label: "Anatomical" },
+  { href: "#dating", label: "Dating" },
+  { href: "#historical", label: "Historical" },
+  { href: "#cumulative", label: "Cumulative" }
 ];
 
 export default function Home() {
