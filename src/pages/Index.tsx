@@ -250,71 +250,73 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FFF9FB] text-[#422238] font-sans relative selection:bg-[#EDD6F7] selection:text-[#4A154B]">
-      {/* Background Ambience styled around primary #EDD6F7 */}
-      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        {/* Main #EDD6F7 radiating pastel orbs */}
-        <div className="absolute -top-36 -right-36 w-[36rem] h-[36rem] rounded-full bg-[#EDD6F7]/55 blur-[120px]" />
-        <div className="absolute top-1/4 -left-36 w-[38rem] h-[38rem] rounded-full bg-[#EDD6F7]/45 blur-[130px]" />
-        <div className="absolute top-2/3 right-10 w-[32rem] h-[32rem] rounded-full bg-[#FCE5F4]/50 blur-[110px]" />
-        <div className="absolute -bottom-32 left-1/4 w-[34rem] h-[34rem] rounded-full bg-[#EDD6F7]/50 blur-[130px]" />
+    <div className="min-h-screen bg-[#FAF5FC] text-[#381432] font-sans relative selection:bg-[#EDD6F7] selection:text-[#381432]">
+      {/* Optimized Background Gradient Atmosphere built with #EDD6F7 */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+        <div className="absolute -top-40 -right-40 w-[38rem] h-[38rem] rounded-full bg-[#EDD6F7]/70 blur-[130px]" />
+        <div className="absolute top-1/4 -left-40 w-[40rem] h-[40rem] rounded-full bg-[#EDD6F7]/60 blur-[140px]" />
+        <div className="absolute top-2/3 right-4 w-[34rem] h-[34rem] rounded-full bg-[#EDD6F7]/50 blur-[120px]" />
+        <div className="absolute -bottom-36 left-1/3 w-[36rem] h-[36rem] rounded-full bg-[#EDD6F7]/65 blur-[140px]" />
       </div>
 
-      {/* Subtle Floating Petals & Light Motifs */}
-      <div className="fixed inset-0 pointer-events-none z-0 opacity-30">
+      {/* Floating Reverent Geometry */}
+      <div className="fixed inset-0 pointer-events-none z-0 opacity-25" aria-hidden="true">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <g fill="#D8B4E2">
-            <circle cx="12%" cy="18%" r="4" opacity="0.6" />
-            <circle cx="28%" cy="32%" r="5" opacity="0.4" />
-            <circle cx="82%" cy="15%" r="6" opacity="0.5" />
-            <circle cx="88%" cy="58%" r="5" opacity="0.4" />
-            <circle cx="14%" cy="72%" r="4" opacity="0.6" />
-            <circle cx="68%" cy="88%" r="5" opacity="0.5" />
+          <g fill="#C79AD8">
+            <circle cx="12%" cy="16%" r="3.5" opacity="0.6" />
+            <circle cx="28%" cy="30%" r="4.5" opacity="0.5" />
+            <circle cx="84%" cy="14%" r="5" opacity="0.5" />
+            <circle cx="89%" cy="56%" r="4" opacity="0.4" />
+            <circle cx="15%" cy="70%" r="3.5" opacity="0.6" />
+            <circle cx="70%" cy="86%" r="4.5" opacity="0.5" />
             <path
-              d="M140 260 C145 250, 155 255, 150 265 C145 275, 135 270, 140 260 Z"
-              opacity="0.45"
+              d="M140 250 C145 240, 155 245, 150 255 C145 265, 135 260, 140 250 Z"
+              opacity="0.4"
             />
             <path
-              d="M780 190 C785 180, 795 185, 790 195 C785 205, 775 200, 780 190 Z"
+              d="M790 180 C795 170, 805 175, 800 185 C795 195, 785 190, 790 180 Z"
               opacity="0.35"
             />
           </g>
         </svg>
       </div>
 
-      {/* Top Sticky Navigation with Descriptive Labels */}
-      <header className="sticky top-0 z-50 backdrop-blur-md bg-[#FFF9FB]/90 border-b border-[#EDD6F7]">
+      {/* Optimized Top Sticky Navigation */}
+      <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#FAF5FC]/90 border-b border-[#E2C0F0] shadow-[0_2px_15px_-3px_rgba(237,214,247,0.5)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap justify-between items-center gap-3">
-          {/* Logo & Reverent Monogram */}
+          {/* Logo & Reverent Title */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-[#EDD6F7] border border-[#DEBEEC] flex items-center justify-center shadow-xs text-xl">
-              🕊️
+            <div className="w-10 h-10 rounded-2xl bg-[#EDD6F7] border border-[#D5A7E6] flex items-center justify-center shadow-xs text-xl">
+              ✝️
             </div>
             <div>
-              <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-lg tracking-tight text-[#4F1D43]">
+              <div className="flex items-center gap-2">
+                <span className="font-black text-lg tracking-tight text-[#381432]">
                   Shroud of Turin
                 </span>
-                <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#EDD6F7] text-[#5C235A]">
-                  Scientific Compendium
+                <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-[#EDD6F7] text-[#381432] border border-[#DCB3EC]">
+                  Scientific Evidence
                 </span>
               </div>
-              <p className="text-[11px] text-[#7C486F] font-medium hidden sm:block">
-                Peer-reviewed forensics, 3D optics, biochemistry & historical record
+              <p className="text-[11px] text-[#69385B] font-medium hidden sm:block">
+                Interdisciplinary empirical research, forensics & historical custody
               </p>
             </div>
           </div>
 
           {/* Descriptive Navigation Buttons */}
-          <nav className="flex items-center gap-1.5 overflow-x-auto py-1 text-xs font-semibold text-[#663158] max-w-full">
+          <nav
+            aria-label="Evidence Sections"
+            className="flex items-center gap-1.5 overflow-x-auto py-1 text-xs font-semibold max-w-full"
+          >
             {shroudSections.map((sec) => (
               <button
                 key={sec.id}
                 onClick={() => scrollToSection(sec.id)}
                 className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 ${
                   activeTab === sec.id
-                    ? "bg-[#EDD6F7] text-[#471344] shadow-xs font-bold border border-[#DCB7EB]"
-                    : "hover:bg-[#F8EBFB] hover:text-[#4F1D43] text-[#6F3A63]"
+                    ? "bg-[#EDD6F7] text-[#381432] shadow-sm font-extrabold border border-[#CFA1E2]"
+                    : "bg-white/60 hover:bg-[#EDD6F7]/50 text-[#5C2D54] border border-transparent hover:border-[#E2C0F0]"
                 }`}
               >
                 <span>{sec.icon}</span>
@@ -325,33 +327,35 @@ export default function Index() {
         </div>
       </header>
 
-      <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-8 pb-20">
-        {/* POLISHED HERO SECTION */}
-        <section className="text-center pt-6 pb-16 md:pt-14 md:pb-22">
+      <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-20">
+        {/* OPTIMIZED HERO SECTION */}
+        <section className="text-center pt-6 pb-14 md:pt-12 md:pb-20">
           {/* Top Reverence Pill */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDD6F7] border border-[#DDB4EA] text-[#4F1549] text-xs sm:text-sm font-semibold tracking-wide shadow-xs mb-6">
-            <span className="text-sm">✝️</span>
-            <span>Historical & Scientific Examination of the Sacred Shroud</span>
-            <span className="text-[#9C5A96]">•</span>
-            <span className="text-xs uppercase tracking-wider font-bold">1st Century Relic</span>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDD6F7] border border-[#D8AEE8] text-[#381432] text-xs sm:text-sm font-bold tracking-wide shadow-xs mb-6">
+            <span>🕊️</span>
+            <span>Historical & Scientific Evidence</span>
+            <span className="text-[#A26BA8]">•</span>
+            <span className="text-[11px] uppercase tracking-wider font-extrabold text-[#4F1947]">
+              First-Century Linen
+            </span>
           </div>
 
-          {/* Majestic Hero Headline */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#44133A] tracking-tight leading-[1.14] mb-6">
+          {/* Main Headline */}
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#381432] tracking-tight leading-[1.12] mb-6">
             The Scientific Testimony of the{" "}
             <span className="relative inline-block">
-              <span className="relative z-10 bg-gradient-to-r from-[#6A1B63] via-[#9C27B0] to-[#C2185B] bg-clip-text text-transparent">
+              <span className="relative z-10 bg-gradient-to-r from-[#4E1547] via-[#7B1FA2] to-[#B71C1C] bg-clip-text text-transparent">
                 Shroud of Turin
               </span>
               <span
                 aria-hidden="true"
-                className="absolute left-0 bottom-1.5 w-full h-3 bg-[#EDD6F7] -z-1 rounded-sm -rotate-1 opacity-80"
+                className="absolute left-0 bottom-2 w-full h-3.5 bg-[#EDD6F7] -z-1 rounded-sm -rotate-1 opacity-90"
               />
             </span>
           </h1>
 
-          {/* Polished, Richly Articulated Hero Narrative */}
-          <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-[#633556] leading-relaxed font-normal mb-8">
+          {/* Optimized Hero Narrative */}
+          <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-[#52254B] leading-relaxed font-normal mb-8">
             Across centuries of scrutiny, the Shroud of Turin remains the single most
             rigorously tested artifact in human history. Through peer-reviewed forensic pathology,
             NASA 3D spatial micro-densitometry, human hemoglobin serology, and 2,000-year X-ray
@@ -361,28 +365,28 @@ export default function Index() {
           </p>
 
           {/* Scripture Card in Reverent Frame */}
-          <div className="max-w-2xl mx-auto mb-9 p-6 rounded-3xl bg-white/90 border border-[#EDD6F7] shadow-sm backdrop-blur-sm relative">
-            <div className="absolute -top-3.5 left-1/2 transform -translate-x-1/2 px-3 py-0.5 rounded-full bg-[#EDD6F7] text-[#551C4E] text-[11px] font-bold tracking-widest uppercase border border-[#DCB7EB]">
-              Holy Scripture • Gospel of Saint John
+          <div className="max-w-2xl mx-auto mb-9 p-6 rounded-3xl bg-white/95 border border-[#E2C0F0] shadow-sm backdrop-blur-sm relative">
+            <div className="absolute -top-3.5 left-1/2 transform -translate-x-1/2 px-3.5 py-0.5 rounded-full bg-[#EDD6F7] text-[#381432] text-[11px] font-black tracking-widest uppercase border border-[#D5A7E6]">
+              Holy Scripture • John 20:3–7
             </div>
-            <p className="italic text-[#5A1E4B] text-base md:text-lg font-serif leading-relaxed mt-1">
+            <p className="italic text-[#46173F] text-base md:text-lg font-serif leading-relaxed mt-1">
               "So Peter and the other disciple started for the tomb... He bent over and
               looked in at the strips of linen lying there but did not go in. Then Simon Peter
               came along behind him and went straight into the tomb. He saw the strips of linen
               lying there, as well as the cloth that had been against Jesus' head."
             </p>
-            <div className="flex items-center justify-center gap-2 mt-3 text-xs font-bold text-[#863873] tracking-wider uppercase">
-              <span>John 20:3–7</span>
+            <div className="flex items-center justify-center gap-2 mt-3 text-xs font-bold text-[#6D325E] tracking-wider uppercase">
+              <span>The Empty Tomb</span>
               <span>•</span>
-              <span className="font-normal italic">The Silent Witness of the Empty Tomb</span>
+              <span className="font-normal italic">Gospel of Saint John</span>
             </div>
           </div>
 
-          {/* Action Call To Action Buttons — Perfectly Spaced Below Text */}
+          {/* Action Call To Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
             <button
               onClick={() => scrollToSection("physical")}
-              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[#EDD6F7] hover:bg-[#E5C2F3] text-[#43123F] font-extrabold text-base border border-[#DCB5EB] shadow-sm hover:shadow-md transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center justify-center gap-2.5"
+              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[#EDD6F7] hover:bg-[#E3BEF1] text-[#381432] font-black text-base border-2 border-[#D8AEE8] shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center justify-center gap-2.5"
             >
               <span>Explore All 6 Scientific Disciplines</span>
               <span className="text-lg">↓</span>
@@ -391,57 +395,57 @@ export default function Index() {
               href="https://www.shroud.com/78papers.htm"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-7 py-4 rounded-2xl bg-white hover:bg-[#FAF0FB] border border-[#EDD6F7] text-[#5C2353] font-bold text-sm transition-all shadow-xs flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-7 py-4 rounded-2xl bg-white hover:bg-[#FAF0FB] border border-[#DEB5EA] text-[#4F1947] font-extrabold text-sm transition-all shadow-xs flex items-center justify-center gap-2"
             >
               <span>Read Original 1978 STURP Papers</span>
-              <span className="text-[#8E44AD]">↗</span>
+              <span className="text-[#8E24AA]">↗</span>
             </a>
           </div>
 
-          {/* Four Key Scientific Benchmarks */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3.5 max-w-3xl mx-auto mt-14">
-            <div className="p-4 rounded-2xl bg-white/80 border border-[#EDD6F7] text-center shadow-xs">
-              <div className="text-2xl font-black text-[#6C1F63]">4.41 × 1.13m</div>
-              <div className="text-xs text-[#723B64] font-semibold mt-1">Herringbone Flax Weave</div>
+          {/* 4 Key Scientific Benchmarks */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3.5 max-w-3xl mx-auto mt-12">
+            <div className="p-4 rounded-2xl bg-white/90 border border-[#E8C7F3] text-center shadow-xs">
+              <div className="text-2xl font-black text-[#56154F]">4.41 × 1.13m</div>
+              <div className="text-xs text-[#68345C] font-semibold mt-1">3:1 Herringbone Flax</div>
             </div>
-            <div className="p-4 rounded-2xl bg-white/80 border border-[#EDD6F7] text-center shadow-xs">
-              <div className="text-2xl font-black text-[#A0154E]">Type AB</div>
-              <div className="text-xs text-[#723B64] font-semibold mt-1">Traumatized Human Blood</div>
+            <div className="p-4 rounded-2xl bg-white/90 border border-[#E8C7F3] text-center shadow-xs">
+              <div className="text-2xl font-black text-[#96123F]">Type AB</div>
+              <div className="text-xs text-[#68345C] font-semibold mt-1">Traumatized Human Blood</div>
             </div>
-            <div className="p-4 rounded-2xl bg-white/80 border border-[#EDD6F7] text-center shadow-xs">
-              <div className="text-2xl font-black text-[#8E24AA]">0.2 Microns</div>
-              <div className="text-xs text-[#723B64] font-semibold mt-1">Superficial Image Depth</div>
+            <div className="p-4 rounded-2xl bg-white/90 border border-[#E8C7F3] text-center shadow-xs">
+              <div className="text-2xl font-black text-[#7B1FA2]">0.2 Microns</div>
+              <div className="text-xs text-[#68345C] font-semibold mt-1">Superficial Depth</div>
             </div>
-            <div className="p-4 rounded-2xl bg-white/80 border border-[#EDD6F7] text-center shadow-xs">
-              <div className="text-2xl font-black text-[#6C1F63]">~2,000 Yrs</div>
-              <div className="text-xs text-[#723B64] font-semibold mt-1">2022 X-ray WAXS Dating</div>
+            <div className="p-4 rounded-2xl bg-white/90 border border-[#E8C7F3] text-center shadow-xs">
+              <div className="text-2xl font-black text-[#56154F]">~2,000 Yrs</div>
+              <div className="text-xs text-[#68345C] font-semibold mt-1">2022 X-ray WAXS Dating</div>
             </div>
           </div>
         </section>
 
-        {/* EVIDENCE SECTIONS: VERTICAL GRID WITH DEEP INFORMATION & CITATIONS */}
-        <div className="space-y-16">
+        {/* EVIDENCE SECTIONS - VERTICAL STACK WITH RICH DETAILS */}
+        <div className="space-y-14">
           {shroudSections.map((section, sIndex) => (
             <section
               key={section.id}
               id={section.id}
-              className="scroll-mt-24 rounded-3xl bg-white/95 border border-[#EDD6F7] p-6 sm:p-8 md:p-10 shadow-xs relative overflow-hidden"
+              className="scroll-mt-24 rounded-3xl bg-white/95 border-2 border-[#EDD6F7] p-6 sm:p-8 md:p-10 shadow-sm relative overflow-hidden"
             >
-              {/* Category Header with Direct Outbound Source Link */}
-              <div className="border-b border-[#F4E1FA] pb-6 mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
+              {/* Category Header with Direct Source Link */}
+              <div className="border-b border-[#F0D5F7] pb-6 mb-7 flex flex-col md:flex-row md:items-end justify-between gap-4">
                 <div>
-                  <div className="flex items-center gap-2 text-xs font-bold tracking-widest text-[#843A77] uppercase mb-1.5">
-                    <span className="px-2.5 py-0.5 rounded-md bg-[#EDD6F7] text-[#4B1444] font-bold">
-                      Section {sIndex + 1}
+                  <div className="flex items-center gap-2 text-xs font-black tracking-widest text-[#7B2E6F] uppercase mb-1.5">
+                    <span className="px-2.5 py-0.5 rounded-md bg-[#EDD6F7] text-[#381432] font-black border border-[#DDB0EB]">
+                      Discipline {sIndex + 1}
                     </span>
                     <span>•</span>
                     <span>{section.badge}</span>
                   </div>
-                  <h2 className="text-2xl sm:text-3xl font-black text-[#44133A] flex items-center gap-2.5">
+                  <h2 className="text-2xl sm:text-3xl font-black text-[#381432] flex items-center gap-2.5">
                     <span>{section.icon}</span>
                     <span>{section.title}</span>
                   </h2>
-                  <p className="text-sm sm:text-base text-[#6E3C62] mt-1.5">
+                  <p className="text-sm sm:text-base text-[#612D55] mt-1.5 font-medium">
                     {section.subtitle}
                   </p>
                 </div>
@@ -452,39 +456,39 @@ export default function Index() {
                     href={section.sourceUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#FAF0FC] hover:bg-[#EDD6F7] border border-[#DEB7EA] text-xs sm:text-sm font-bold text-[#561D4C] transition-all shadow-xs"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#FAF1FB] hover:bg-[#EDD6F7] border border-[#DCB2EB] text-xs sm:text-sm font-extrabold text-[#381432] transition-all shadow-xs"
                   >
                     <span>Primary Source: {section.sourceName}</span>
-                    <span className="text-[#883278] font-bold">↗</span>
+                    <span className="text-[#842A75] font-black">↗</span>
                   </a>
                 </div>
               </div>
 
               {/* VERTICAL GRID: Points Stacked One On Top of Another */}
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-4">
                 {section.points.map((pt, pIdx) => (
                   <article
                     key={pIdx}
-                    className="p-5 sm:p-6 rounded-2xl bg-[#FFFDFE] hover:bg-[#FAF3FB] border border-[#F1DCF7] transition-all shadow-xs group"
+                    className="evidence-card p-5 sm:p-6 rounded-2xl bg-[#FFFDFE] hover:bg-[#FAF4FC] border border-[#E9C8F3] transition-all group"
                   >
                     {/* Header of Point */}
-                    <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-3">
-                      <h3 className="text-lg sm:text-xl font-bold text-[#4B153E] group-hover:text-[#7B1FA2] transition-colors">
+                    <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-2.5">
+                      <h3 className="text-lg sm:text-xl font-bold text-[#3E1638] group-hover:text-[#7B1FA2] transition-colors">
                         {pt.title}
                       </h3>
-                      <span className="self-start sm:self-auto text-[11px] font-bold px-3 py-1 rounded-full bg-[#EDD6F7] text-[#54164B] uppercase tracking-wider">
+                      <span className="self-start sm:self-auto text-[11px] font-black px-3 py-1 rounded-full bg-[#EDD6F7] text-[#381432] uppercase tracking-wider border border-[#DCB0EB]">
                         {pt.tag}
                       </span>
                     </div>
 
                     {/* Rich Scientific Detail */}
-                    <p className="text-sm sm:text-base text-[#613254] leading-relaxed mb-3.5">
+                    <p className="text-sm sm:text-base text-[#57274B] leading-relaxed mb-3">
                       {pt.detail}
                     </p>
 
                     {/* Scientific Citation */}
-                    <div className="flex items-center gap-2 text-xs font-mono text-[#814571] pt-2 border-t border-[#F5E6F8]">
-                      <span className="font-sans font-bold text-[#5B1E4E] text-[11px] uppercase tracking-wider">
+                    <div className="flex items-center gap-2 text-xs font-mono text-[#763765] pt-2 border-t border-[#F2DEFA]">
+                      <span className="font-sans font-bold text-[#45143C] text-[11px] uppercase tracking-wider">
                         Citation:
                       </span>
                       <span>{pt.citation}</span>
@@ -494,7 +498,7 @@ export default function Index() {
               </div>
 
               {/* Category Footer Reference Callout */}
-              <div className="mt-7 pt-4 border-t border-[#F4E1FA] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-[#7F4773]">
+              <div className="mt-7 pt-4 border-t border-[#F2DEFA] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-[#713B64]">
                 <span className="flex items-center gap-1.5 font-medium">
                   <span>📖</span>
                   <span>Corroborates ancient Palestinian archaeology & forensic records</span>
@@ -503,7 +507,7 @@ export default function Index() {
                   href={section.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-bold hover:underline text-[#7E1E6B] flex items-center gap-1"
+                  className="font-extrabold hover:underline text-[#7B1F69] flex items-center gap-1"
                 >
                   <span>Review full research documentation & methodology</span>
                   <span>→</span>
@@ -514,26 +518,26 @@ export default function Index() {
         </div>
 
         {/* REVERENT RESURRECTION & CHRISTOLOGY SUMMARY */}
-        <section className="mt-16 rounded-3xl bg-gradient-to-br from-[#FAF0FB] via-[#EDD6F7]/60 to-[#FCECF7] border border-[#DEBAEA] p-8 md:p-12 text-center shadow-xs">
+        <section className="mt-16 rounded-3xl bg-gradient-to-br from-[#FAF1FC] via-[#EDD6F7]/70 to-[#FCEEF9] border-2 border-[#E2BFEF] p-8 md:p-12 text-center shadow-sm">
           <div className="max-w-3xl mx-auto">
             <div className="w-14 h-14 mx-auto mb-4 rounded-2xl bg-[#EDD6F7] border border-[#D5A7E6] flex items-center justify-center text-3xl shadow-xs">
               🕊️
             </div>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#441239] mb-4">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#381432] mb-4">
               "He Is Not Here; He Has Risen"
             </h2>
-            <p className="text-base sm:text-lg text-[#5F2E52] leading-relaxed mb-6">
+            <p className="text-base sm:text-lg text-[#55244A] leading-relaxed mb-6 font-normal">
               Science does not displace faith; rather, empirical truth continually unveils
               the majesty of God's revelation. The Shroud of Turin remains a physical testament
               at the crossroads of history and eternity—leaving behind not merely a portrait of death,
               but an incomprehensible flash of radiant light heralding the Resurrection.
             </p>
-            <div className="p-5 rounded-2xl bg-white/80 border border-[#EDD6F7] inline-block text-left max-w-xl mx-auto shadow-2xs">
-              <blockquote className="italic font-serif text-[#521743] text-base sm:text-lg leading-relaxed">
+            <div className="p-5 rounded-2xl bg-white/90 border border-[#EDD6F7] inline-block text-left max-w-xl mx-auto shadow-2xs">
+              <blockquote className="italic font-serif text-[#46173E] text-base sm:text-lg leading-relaxed">
                 "For us, the Shroud does not speak of defeat, but of victory. It is the
                 mirror of the Gospel: suffering transformed into boundless love."
               </blockquote>
-              <div className="mt-2 text-xs font-bold uppercase tracking-wider text-[#7E2D6A]">
+              <div className="mt-2 text-xs font-bold uppercase tracking-wider text-[#732961]">
                 — Saint John Paul II, Address in Turin Cathedral
               </div>
             </div>
@@ -541,34 +545,33 @@ export default function Index() {
         </section>
       </main>
 
-      {/* REVERENT, PROFESSIONAL & ELEGANT FOOTER */}
-      <footer className="relative z-10 bg-[#FAF1FB] border-t-2 border-[#EDD6F7] pt-14 pb-12 text-[#56254B]">
+      {/* PROFESSIONAL, REVERENT FOOTER */}
+      <footer className="relative z-10 bg-[#FAF1FC] border-t-2 border-[#EDD6F7] pt-14 pb-12 text-[#502347]">
         <div className="max-w-5xl mx-auto px-6">
-          {/* Main Footer Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-[#E8C5EF]">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-[#E4BFEE]">
             {/* Column 1: Christological Dedication */}
             <div className="md:col-span-2">
               <div className="flex items-center gap-2.5 mb-3">
-                <div className="w-8 h-8 rounded-lg bg-[#EDD6F7] border border-[#DEBEEC] flex items-center justify-center text-base">
+                <div className="w-8 h-8 rounded-lg bg-[#EDD6F7] border border-[#D3A0E5] flex items-center justify-center text-base">
                   ✝️
                 </div>
-                <span className="font-black text-xl text-[#441239] tracking-tight">
+                <span className="font-black text-xl text-[#381432] tracking-tight">
                   Shroud of Turin
                 </span>
-                <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#EDD6F7] text-[#57194E]">
+                <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-[#EDD6F7] text-[#381432] border border-[#DCB0EB]">
                   Scientific Compendium
                 </span>
               </div>
-              <p className="text-sm text-[#663558] leading-relaxed mb-4 max-w-md">
+              <p className="text-sm text-[#5C2B52] leading-relaxed mb-4 max-w-md">
                 Dedicated to the reverent presentation of peer-reviewed scientific, forensic,
                 and historical evidence corroborating the Holy Shroud as the authentic burial cloth
                 of Our Lord and Savior Jesus Christ.
               </p>
-              <div className="flex flex-wrap items-center gap-2 text-xs text-[#733B63] font-semibold">
-                <span className="px-2.5 py-1 rounded-md bg-[#EDD6F7] text-[#4C1844]">
+              <div className="flex flex-wrap items-center gap-2 text-xs text-[#6A355F] font-bold">
+                <span className="px-2.5 py-1 rounded-md bg-[#EDD6F7] text-[#381432] border border-[#D8AEE8]">
                   Soli Deo Gloria
                 </span>
-                <span className="px-2.5 py-1 rounded-md bg-white border border-[#EDD6F7] text-[#581F4E]">
+                <span className="px-2.5 py-1 rounded-md bg-white border border-[#E2BFEF] text-[#46173E]">
                   Ad Majorem Dei Gloriam
                 </span>
               </div>
@@ -576,16 +579,16 @@ export default function Index() {
 
             {/* Column 2: Evidence Navigation */}
             <div>
-              <h4 className="font-extrabold text-xs uppercase tracking-wider text-[#431238] mb-3.5 flex items-center gap-1.5">
+              <h4 className="font-black text-xs uppercase tracking-wider text-[#381432] mb-3.5 flex items-center gap-1.5">
                 <span>🔬</span>
                 <span>Disciplines</span>
               </h4>
-              <ul className="space-y-2 text-sm text-[#69385B]">
+              <ul className="space-y-2 text-sm text-[#5F2E55]">
                 {shroudSections.map((sec) => (
                   <li key={sec.id}>
                     <button
                       onClick={() => scrollToSection(sec.id)}
-                      className="hover:text-[#8E24AA] transition-colors cursor-pointer text-left text-xs font-semibold flex items-center gap-1.5"
+                      className="hover:text-[#8E24AA] transition-colors cursor-pointer text-left text-xs font-bold flex items-center gap-1.5"
                     >
                       <span>{sec.icon}</span>
                       <span>{sec.shortLabel}</span>
@@ -597,11 +600,11 @@ export default function Index() {
 
             {/* Column 3: Peer-Reviewed Repositories */}
             <div>
-              <h4 className="font-extrabold text-xs uppercase tracking-wider text-[#431238] mb-3.5 flex items-center gap-1.5">
+              <h4 className="font-black text-xs uppercase tracking-wider text-[#381432] mb-3.5 flex items-center gap-1.5">
                 <span>📚</span>
                 <span>Primary Archives</span>
               </h4>
-              <ul className="space-y-2 text-xs text-[#69385B] font-medium">
+              <ul className="space-y-2 text-xs text-[#5F2E55] font-semibold">
                 <li>
                   <a
                     href="https://www.shroud.com/78papers.htm"
@@ -610,7 +613,7 @@ export default function Index() {
                     className="hover:text-[#8E24AA] transition-colors flex items-center justify-between"
                   >
                     <span>STURP Official Papers (1978–1984)</span>
-                    <span className="text-[#96377F]">↗</span>
+                    <span className="text-[#842A75] font-bold">↗</span>
                   </a>
                 </li>
                 <li>
@@ -621,7 +624,7 @@ export default function Index() {
                     className="hover:text-[#8E24AA] transition-colors flex items-center justify-between"
                   >
                     <span>Scientific Reports DNA Study (2015)</span>
-                    <span className="text-[#96377F]">↗</span>
+                    <span className="text-[#842A75] font-bold">↗</span>
                   </a>
                 </li>
                 <li>
@@ -632,7 +635,7 @@ export default function Index() {
                     className="hover:text-[#8E24AA] transition-colors flex items-center justify-between"
                   >
                     <span>Heritage X-Ray WAXS Analysis (2022)</span>
-                    <span className="text-[#96377F]">↗</span>
+                    <span className="text-[#842A75] font-bold">↗</span>
                   </a>
                 </li>
                 <li>
@@ -640,26 +643,26 @@ export default function Index() {
                     href="https://chatgpt.com/s/t_6ad6caf2785c819196835ee935792704"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-[#8E24AA] transition-colors flex items-center justify-between font-bold text-[#7E1E6B]"
+                    className="hover:text-[#8E24AA] transition-colors flex items-center justify-between font-black text-[#731E63]"
                   >
                     <span>Full Scholarly Research Log</span>
-                    <span>↗</span>
+                    <span className="font-bold">↗</span>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Scripture & Solemn Theological Benediction */}
-          <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#7A426B]">
-            <div className="flex items-center gap-2">
+          {/* Scripture & Benediction */}
+          <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6F3662]">
+            <div className="flex items-center gap-2 font-medium">
               <span className="text-base">✝️</span>
               <span>
                 "I am the resurrection and the life. Whoever believes in Me, though he die, yet
                 shall he live." — John 11:25
               </span>
             </div>
-            <div className="text-[11px] text-[#864A75]">
+            <div className="text-[11px] text-[#7A406E] font-medium">
               Maintained with academic rigor, reverent Christian devotion & truth.
             </div>
           </div>

@@ -2,48 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom pastel colors with #EDD6F7 as primary */
 :root {
-  --primary-lilac: #EDD6F7;
-  --primary-lilac-dark: #D4B0E8;
-  --primary-lilac-light: #F7EDFC;
-  --pastel-rose: #FFD6E8;
-  --pastel-lavender: #E8D7F1;
-  --soft-creme: #FFFBFD;
-  --text-deep: #47263F;
-  --text-muted: #73486A;
-  --accent-pink: #F472B6;
-  --accent-violet: #A855F7;
+  --primary-brand: #EDD6F7;
+  --primary-brand-dark: #D8B7E7;
+  --primary-brand-light: #F7EDFB;
+  --primary-brand-border: #E2C0F0;
+  --text-primary: #381432;
+  --text-secondary: #5C2D54;
+  --text-muted: #7E4A74;
 }
 
-/* Background ambient light */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: 
-    radial-gradient(circle at 15% 15%, rgba(237, 214, 247, 0.45) 0%, transparent 45%),
-    radial-gradient(circle at 85% 20%, rgba(255, 214, 232, 0.4) 0%, transparent 45%),
-    radial-gradient(circle at 50% 80%, rgba(232, 215, 241, 0.5) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* Floating animation for subtle elements */
-@keyframes softFloat {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-8px) rotate(2deg);
-  }
-}
-
-.floating-element {
-  animation: softFloat 4s ease-in-out infinite;
+/* Background ambient light centered around #EDD6F7 */
+body {
+  background-color: #FAF5FC;
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 /* Smooth custom scroll behavior */
@@ -51,19 +25,19 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Card hover glow with #EDD6F7 */
-.pastel-card {
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.pastel-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px -8px rgba(212, 176, 232, 0.35);
-  border-color: #DDB8EE;
-}
-
-/* Focus outlines */
+/* Optimize custom focus rings */
 button:focus-visible, a:focus-visible {
-  outline: 2px solid #C084FC;
+  outline: 2px solid #C07CE6;
   outline-offset: 2px;
+}
+
+/* Smooth card transitions */
+.evidence-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.evidence-card:hover {
+  transform: translateY(-2px);
+  border-color: #D8B7E7;
+  box-shadow: 0 8px 24px -4px rgba(216, 183, 231, 0.35);
 }
