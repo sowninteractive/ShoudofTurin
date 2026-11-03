@@ -408,53 +408,65 @@ export default function Index() {
         <div className="absolute -bottom-28 right-1/4 w-[36rem] h-[36rem] rounded-full bg-[#D4B9FC]/50 blur-[130px]" />
       </div>
 
-      {/* SIMPLIFIED HEADER */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-[#D1B3FB] shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-col md:flex-row md:items-center justify-between gap-3">
-          {/* Brand */}
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-[#291238] flex items-center justify-center text-xl shrink-0">
-              ✝️
-            </div>
-            <span className="font-black text-lg tracking-tight text-[#291238]">
-              The Shroud of Turin
-            </span>
-          </div>
-
-          {/* Quick Action */}
-          <a
-            href="https://www.shroud.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs font-bold px-3 py-1.5 rounded-xl bg-[#291238] text-white hover:bg-[#431D56] transition-colors flex items-center gap-1.5"
-          >
-            <span>STURP Archive</span>
-            <span>↗</span>
-          </a>
-        </div>
-
-        {/* SIMPLIFIED TAB NAVIGATION */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-2 pt-1">
-          <div className="flex flex-wrap items-center gap-1.5 justify-center">
-            {NAVIGATION_CATEGORIES.map((cat) => {
-              const isActive = selectedCategory === cat.id;
-              return (
-                <button
-                  key={cat.id}
-                  onClick={() => setSelectedCategory(cat.id)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-colors whitespace-nowrap cursor-pointer shrink-0 ${
-                    isActive
-                      ? "bg-[#291238] text-white"
-                      : "bg-white/60 hover:bg-white text-[#4A2460]"
-                  }`}
-                >
-                  {cat.label}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      </header>
+      {/* BEAUTIFUL HEADER */}
+            <header className="sticky top-0 z-50 backdrop-blur-xl bg-white/85 border-b border-[#D1B3FB]/60 shadow-sm">
+              {/* Subtle top accent line */}
+              <div className="h-1 bg-gradient-to-r from-transparent via-[#7B1FA2]/40 to-transparent" />
+      
+              <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                {/* Brand Row */}
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 py-3.5">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#291238] to-[#4A154B] flex items-center justify-center text-xl shrink-0 shadow-lg shadow-[#291238]/30">
+                      ✝️
+                    </div>
+                    <div>
+                      <h1 className="font-black text-lg sm:text-xl tracking-tight text-[#291238] leading-none">
+                        The Shroud of Turin
+                      </h1>
+                      <p className="text-[11px] font-medium text-[#6B3D84] tracking-wider uppercase mt-0.5">
+                        Empirical Evidence Compendium
+                      </p>
+                    </div>
+                  </div>
+      
+                  <a
+                    href="https://www.shroud.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group text-xs font-semibold px-4 py-2 rounded-xl bg-white/80 hover:bg-white text-[#291238] border border-[#D1B3FB]/60 hover:border-[#7B1FA2]/40 transition-all flex items-center gap-2 shadow-sm hover:shadow-md"
+                  >
+                    <span>STURP Archive</span>
+                    <span className="transition-transform group-hover:translate-x-0.5">↗</span>
+                  </a>
+                </div>
+      
+                {/* Navigation Tabs */}
+                <div className="pb-2.5">
+                  <div className="flex flex-wrap items-center gap-1.5 justify-center">
+                    {NAVIGATION_CATEGORIES.map((cat) => {
+                      const isActive = selectedCategory === cat.id;
+                      return (
+                        <button
+                          key={cat.id}
+                          onClick={() => setSelectedCategory(cat.id)}
+                          className={`relative px-4 py-2 rounded-xl text-xs font-medium tracking-wide transition-all whitespace-nowrap cursor-pointer shrink-0 ${
+                            isActive
+                              ? "bg-gradient-to-r from-[#291238] to-[#4A154B] text-white shadow-md shadow-[#291238]/30"
+                              : "bg-white/60 hover:bg-white text-[#4A2460] hover:text-[#291238] hover:shadow-sm"
+                          }`}
+                        >
+                          {cat.label}
+                          {isActive && (
+                            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-white/40" />
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            </header>
 
       <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-8 pb-20">
         {/* COMMANDING, PROFESSIONAL & BEAUTIFULLY POLISHED HERO SECTION */}
