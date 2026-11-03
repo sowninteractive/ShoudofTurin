@@ -51,7 +51,7 @@ export const evidenceList: EvidencePoint[] = [
     detail:
       "Scientists John Jackson, Eric Jumper, and William Ercoline examined the Shroud using a NASA VP-8 Image Analyzer. Normal paintings and photographs generate grotesque, distorted spikes when converted to relief. In contrast, the Shroud's shading correlates mathematically with the vertical cloth-to-body distance (Intensity = f(distance)), generating an undistorted, anatomically correct 3D topographic relief of a human body.",
     source: "Jackson, J. P., Jumper, E. J., and Ercoline, W. R. (1984), Applied Optics 23: 2244–2270",
-    sourceUrl: "https://www.shroud.com/78papers.htm"
+    sourceUrl: "https://www.shroud.com"
   },
   {
     num: 4,
@@ -63,7 +63,7 @@ export const evidenceList: EvidencePoint[] = [
     detail:
       "Electron microscopy demonstrated that the sepia coloration is strictly confined to the outermost primary cell wall of linen fibrils—a skin only 0.2 to 0.5 micrometers thick. The interior core of the thread remains pure white linen. There is zero capillary action, no cementation between threads, no pigment binder, and no penetration through to the opposite side of the cloth.",
     source: "STURP Scientific Papers, Analytica Chimica Acta (1982)",
-    sourceUrl: "https://www.shroud.com/78papers.htm"
+    sourceUrl: "https://www.shroud.com"
   },
   {
     num: 5,
@@ -75,7 +75,7 @@ export const evidenceList: EvidencePoint[] = [
     detail:
       "The Shroud of Turin Research Project (STURP) team spent 120 continuous hours directly examining the relic using UV/visible spectroscopy, X-ray fluorescence, thermography, infrared radiography, and microchemistry. Their unanimous conclusion: 'No pigments, paints, dyes, or stains have been found to make up the image. The image is an ongoing mystery.'",
     source: "STURP Official Final Scientific Reports (1978–1981)",
-    sourceUrl: "https://www.shroud.com/78papers.htm"
+    sourceUrl: "https://www.shroud.com"
   },
 
   // SECTION 2: BIOCHEMISTRY & SEROLOGY
@@ -89,7 +89,7 @@ export const evidenceList: EvidencePoint[] = [
     detail:
       "Biochemists John Heller and Alan Adler proved the stains were genuine human blood. Tests verified hemochromogen, cyanomethemoglobin, porphyrin rings, and serum albumin. Furthermore, high concentrations of bilirubin explain why the blood remains reddish rather than turning dark brown, reflecting the severe systemic hemolysis and liver stress induced by extreme physical torture.",
     source: "Heller, J. H., and Adler, A. D. (1980), Applied Optics 19(16): 2742–2744",
-    sourceUrl: "https://www.shroud.com/adler2.htm"
+    sourceUrl: "https://www.shroud.com"
   },
   {
     num: 7,
@@ -101,7 +101,7 @@ export const evidenceList: EvidencePoint[] = [
     detail:
       "When blood crusts are digested with proteolytic enzymes, the linen fibrils beneath are completely uncolored and pristine. The blood acted as a photographic mask against whatever radiation or event subsequently produced the body image. This completely rules out the possibility of an artist painting an image and then adding blood afterwards.",
     source: "Pellicori, R. (1980), Applied Optics 19(12): 1913–1920",
-    sourceUrl: "https://www.shroud.com/78papers.htm"
+    sourceUrl: "https://www.shroud.com"
   },
   {
     num: 8,
@@ -221,7 +221,7 @@ export const evidenceList: EvidencePoint[] = [
     detail:
       "Chemist Raymond Rogers of Los Alamos National Laboratory proved that the solitary corner sample clipped in 1988 was non-representative. Chemical testing revealed gum arabic dye and spliced cotton fibers from a 16th-century invisible mending job performed by the Poor Clare nuns after the 1532 Chambéry church fire, rendering the 1988 medieval date scientifically invalid.",
     source: "Rogers, R. N. (2005), Thermochimica Acta 425: 189–194",
-    sourceUrl: "https://www.shroud.com/rogers.htm"
+    sourceUrl: "https://www.shroud.com"
   },
 
   // SECTION 4: GENOMICS, BOTANY & ARCHAEOLOGY
@@ -362,7 +362,7 @@ export const evidenceList: EvidencePoint[] = [
     categoryGroup: "Gospel Harmony & The Resurrection",
     categoryLabel: "Cumulative Apologetics",
     highlightTag: "Miraculous Convergence",
-    summary: "The convergence of 3D optical coding, sub-micron surface oxidation, traumatic AB blood, and 1st-century Judaean flora defies forgery.",
+    summary: "The convergence of 3D optical coding, sub-micron surface coloration, traumatic AB blood, and 1st-century Judaean flora defies forgery.",
     detail:
       "The authenticity of the Shroud of Turin rests not on any single isolated clue, but upon an unbroken convergence of independent disciplines: sub-micron cellulose oxidation, NASA 3D depth, human type AB blood chemistry, authentic Roman crucifixion pathology, Jerusalem aragonite soil, 1st-century WAXS crystallographic dating, and documented Byzantine custody. It stands as an authentic, silent witness to the bodily Resurrection of Jesus Christ.",
     source: "Cumulative Interdisciplinary Scientific Corpus (1978–2026)"
@@ -400,7 +400,7 @@ export default function Index() {
   });
 
   return (
-    <div className="min-h-screen bg-[#E8D7FE] text-[#291238] font-sans relative selection:bg-[#D4B9FC] selection:text-[#291238]">
+    <div className="min-h-screen bg-gradient-to-br from-[#E8D7FE] via-[#F4EDFE] to-[#EDD6F7] text-[#291238] font-sans relative selection:bg-[#D4B9FC] selection:text-[#291238]">
       {/* Background Ambience with rich soft glows centered on #E8D7FE */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
         <div className="absolute -top-32 -right-32 w-[38rem] h-[38rem] rounded-full bg-[#D4B9FC]/40 blur-[130px]" />
@@ -409,7 +409,7 @@ export default function Index() {
       </div>
 
       {/* TOP DESCRIPTIVE NAVIGATION HEADER */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#E8D7FE]/95 border-b border-[#D1B3FB] shadow-sm">
+      <header className="sticky top-0 z-50 backdrop-blur-xl bg-white/95 border-b border-[#D1B3FB] shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3">
           {/* Brand & Relic Emblem */}
           <div className="flex items-center gap-3">
@@ -445,32 +445,34 @@ export default function Index() {
           </div>
         </div>
 
-        {/* REFINED DESCRIPTIVE HORIZONTAL TABS (REPLACES PART 1, PART 2) */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-2.5 pt-1 overflow-x-auto scrollbar-none flex items-center gap-2">
-          {NAVIGATION_CATEGORIES.map((cat) => {
-            const isActive = selectedCategory === cat.id;
-            return (
-              <button
-                key={cat.id}
-                onClick={() => setSelectedCategory(cat.id)}
-                className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap cursor-pointer shrink-0 ${
-                  isActive
-                    ? "bg-[#291238] text-white shadow-sm border border-[#291238]"
-                    : "bg-white/80 hover:bg-white text-[#4A2460] border border-[#D1B3FB]/70"
-                }`}
-              >
-                <span>{cat.icon}</span>
-                <span>{cat.label}</span>
-                <span
-                  className={`text-[10px] px-1.5 py-0.2 rounded-md font-black ${
-                    isActive ? "bg-white/20 text-white" : "bg-[#E8D7FE] text-[#291238]"
+        {/* RESPONSIVE TAB NAVIGATION - NO HORIZONTAL SCROLLBAR */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-2.5 pt-1">
+          <div className="flex flex-wrap items-center gap-2 justify-center">
+            {NAVIGATION_CATEGORIES.map((cat) => {
+              const isActive = selectedCategory === cat.id;
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setSelectedCategory(cat.id)}
+                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap cursor-pointer shrink-0 ${
+                    isActive
+                      ? "bg-[#291238] text-white shadow-sm border border-[#291238]"
+                      : "bg-white/80 hover:bg-white text-[#4A2460] border border-[#D1B3FB]/70"
                   }`}
                 >
-                  {cat.count}
-                </span>
-              </button>
-            );
-          })}
+                  <span>{cat.icon}</span>
+                  <span>{cat.label}</span>
+                  <span
+                    className={`text-[10px] px-1.5 py-0.2 rounded-md font-black ${
+                      isActive ? "bg-white/20 text-white" : "bg-[#E8D7FE] text-[#291238]"
+                    }`}
+                  >
+                    {cat.count}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
         </div>
       </header>
 
@@ -483,7 +485,7 @@ export default function Index() {
             <span>The Sacred Burial Linen of Jesus Christ</span>
             <span className="text-[#8B50A8]">•</span>
             <span className="text-[11px] uppercase tracking-wider font-black text-[#5C1E70]">
-              Empirical Proof & Apostolic Witness
+              Empirical Investigation
             </span>
           </div>
 
