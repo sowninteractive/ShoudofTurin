@@ -408,67 +408,47 @@ export default function Index() {
         <div className="absolute -bottom-28 right-1/4 w-[36rem] h-[36rem] rounded-full bg-[#D4B9FC]/50 blur-[130px]" />
       </div>
 
-      {/* TOP DESCRIPTIVE NAVIGATION HEADER */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-white/95 border-b border-[#D1B3FB] shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex flex-col md:flex-row md:items-center justify-between gap-3">
-          {/* Brand & Relic Emblem */}
-          <div className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-2xl bg-white/90 border border-[#D1B3FB] flex items-center justify-center text-2xl shadow-xs shrink-0">
+      {/* SIMPLIFIED HEADER */}
+      <header className="sticky top-0 z-50 backdrop-blur-xl bg-white/90 border-b border-[#D1B3FB] shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          {/* Brand */}
+          <div className="flex items-center gap-2.5">
+            <div className="w-9 h-9 rounded-xl bg-[#291238] flex items-center justify-center text-xl shrink-0">
               ✝️
             </div>
-            <div>
-              <div className="flex items-center gap-2 flex-wrap">
-                <span className="font-black text-xl tracking-tight text-[#291238]">
-                  The Shroud of Turin
-                </span>
-                <span className="text-[11px] font-extrabold px-3 py-0.5 rounded-full bg-white/95 text-[#4A2460] border border-[#D1B3FB] shadow-2xs">
-                  Holy Relic of the Resurrection
-                </span>
-              </div>
-              <p className="text-xs text-[#5C2D6A] font-medium hidden sm:block">
-                Comprehensive Scientific, Forensic, and Historical Compendium
-              </p>
-            </div>
+            <span className="font-black text-lg tracking-tight text-[#291238]">
+              The Shroud of Turin
+            </span>
           </div>
 
-          {/* Quick Action Badges */}
-          <div className="flex items-center gap-2 self-end md:self-auto">
-            <a
-              href="https://www.shroud.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-bold px-3.5 py-1.5 rounded-xl bg-white/90 hover:bg-white text-[#291238] border border-[#D1B3FB] transition-all flex items-center gap-1.5 shadow-2xs"
-            >
-              <span>STURP Official Archive</span>
-              <span>↗</span>
-            </a>
-          </div>
+          {/* Quick Action */}
+          <a
+            href="https://www.shroud.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs font-bold px-3 py-1.5 rounded-xl bg-[#291238] text-white hover:bg-[#431D56] transition-colors flex items-center gap-1.5"
+          >
+            <span>STURP Archive</span>
+            <span>↗</span>
+          </a>
         </div>
 
-        {/* RESPONSIVE TAB NAVIGATION - NO HORIZONTAL SCROLLBAR */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-2.5 pt-1">
-          <div className="flex flex-wrap items-center gap-2 justify-center">
+        {/* SIMPLIFIED TAB NAVIGATION */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-2 pt-1">
+          <div className="flex flex-wrap items-center gap-1.5 justify-center">
             {NAVIGATION_CATEGORIES.map((cat) => {
               const isActive = selectedCategory === cat.id;
               return (
                 <button
                   key={cat.id}
                   onClick={() => setSelectedCategory(cat.id)}
-                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap cursor-pointer shrink-0 ${
+                  className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-colors whitespace-nowrap cursor-pointer shrink-0 ${
                     isActive
-                      ? "bg-[#291238] text-white shadow-sm border border-[#291238]"
-                      : "bg-white/80 hover:bg-white text-[#4A2460] border border-[#D1B3FB]/70"
+                      ? "bg-[#291238] text-white"
+                      : "bg-white/60 hover:bg-white text-[#4A2460]"
                   }`}
                 >
-                  <span>{cat.icon}</span>
-                  <span>{cat.label}</span>
-                  <span
-                    className={`text-[10px] px-1.5 py-0.2 rounded-md font-black ${
-                      isActive ? "bg-white/20 text-white" : "bg-[#E8D7FE] text-[#291238]"
-                    }`}
-                  >
-                    {cat.count}
-                  </span>
+                  {cat.label}
                 </button>
               );
             })}
