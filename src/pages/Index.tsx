@@ -470,328 +470,335 @@ export default function Index() {
 
       <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-8 pb-20">
         {/* COMMANDING, PROFESSIONAL & BEAUTIFULLY POLISHED HERO SECTION */}
-        <section className="text-center pt-4 pb-12">
-          {/* Reverent Overline Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-[#D1B3FB] text-[#291238] text-xs sm:text-sm font-extrabold tracking-wide shadow-2xs mb-5">
-            <span className="text-base">✝️</span>
-            <span>The Sacred Burial Linen of Jesus Christ</span>
-            <span className="text-[#8B50A8]">•</span>
-            <span className="text-[11px] uppercase tracking-wider font-black text-[#5C1E70]">
-              Empirical Investigation
-            </span>
-          </div>
-
-          {/* Majestic Hero Headline */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#291238] tracking-tight leading-[1.12] mb-6">
-            The Silent Witness to the{" "}
-            <span className="relative inline-block">
-              <span className="relative z-10 bg-gradient-to-r from-[#4A154B] via-[#7B1FA2] to-[#A0162B] bg-clip-text text-transparent">
-                Miracle of the Resurrection
-              </span>
-              <span
-                aria-hidden="true"
-                className="absolute left-0 bottom-1 w-full h-3.5 bg-[#D4B9FC] -z-1 rounded-sm opacity-80"
-              />
-            </span>
-          </h1>
-
-          {/* Polished Subtitle Text */}
-          <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-[#4A2460] leading-relaxed mb-8 font-normal">
-            A comprehensive, rigorous synthesis of 30+ peer-reviewed scientific studies, NASA 3D
-            spatial depth analyses, human hemoglobin serology, sub-micron vacuum ultraviolet
-            physics, and unbroken historical custody documenting the authentic burial cloth of Our
-            Lord Jesus Christ.
-          </p>
-
-          {/* Quick Metrics Bar to Show the Miracle at a Glance */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto mb-8 text-left">
-            <div className="p-3.5 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs">
-              <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider">Image Depth</div>
-              <div className="text-lg sm:text-xl font-black text-[#291238]">0.2 Microns</div>
-              <div className="text-[10px] text-[#6B3D84]">Primary fibril cell wall only</div>
-            </div>
-            <div className="p-3.5 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs">
-              <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider">Blood Analysis</div>
-              <div className="text-lg sm:text-xl font-black text-[#851627]">Type AB Human</div>
-              <div className="text-[10px] text-[#6B3D84]">Traumatic high-bilirubin clots</div>
-            </div>
-            <div className="p-3.5 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs">
-              <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider">X-Ray Crystallography</div>
-              <div className="text-lg sm:text-xl font-black text-[#291238]">~2,000 Years</div>
-              <div className="text-[10px] text-[#6B3D84]">2022 WAXS De Caro Study</div>
-            </div>
-            <div className="p-3.5 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs">
-              <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider">Radiant Burst</div>
-              <div className="text-lg sm:text-xl font-black text-[#5C1E70]">34 Trillion W</div>
-              <div className="text-[10px] text-[#6B3D84]">ENEA Vacuum UV Laser Physics</div>
-            </div>
-          </div>
-
-          {/* Elegant Scripture Testimony Card */}
-          <div className="max-w-2xl mx-auto p-6 rounded-3xl bg-white/95 border-2 border-[#D1B3FB] shadow-sm text-center relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#7B1FA2] via-[#E8D7FE] to-[#A0162B]" />
-            <p className="italic font-serif text-[#331135] text-base sm:text-lg leading-relaxed mb-2">
-              "Simon Peter arrived and went inside the tomb. He saw the linen wrappings lying there,
-              and the face cloth that had been on Jesus' head... Then the other disciple, who had
-              reached the tomb first, also went in, and he saw and believed."
-            </p>
-            <div className="text-xs font-black text-[#6A256E] tracking-wider uppercase">
-              — John 20:6–8 • The Catalyst of Apostolic Faith
-            </div>
-          </div>
-        </section>
-
-        {/* SEARCH & DETAILED FILTER CONTROLS */}
-        <section className="mb-8 p-4 sm:p-5 rounded-3xl bg-white/95 border border-[#D1B3FB] shadow-xs">
-          <div className="flex flex-col sm:flex-row items-center gap-3 justify-between">
-            {/* Search Input */}
-            <div className="w-full sm:w-80 relative">
-              <input
-                type="text"
-                placeholder="Search across all evidence, forensics, sources..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full px-4 py-2.5 pl-10 rounded-2xl bg-[#F8F2FE] border border-[#D1B3FB] text-sm text-[#291238] placeholder-[#79508F] focus:outline-none focus:ring-2 focus:ring-[#7B1FA2]/30 focus:border-[#7B1FA2]"
-              />
-              <span className="absolute left-3.5 top-3 text-sm text-[#79508F]">🔍</span>
-            </div>
-
-            {/* Evidence Count Pill */}
-            <div className="flex items-center gap-2 self-stretch sm:self-auto justify-between sm:justify-end">
-              <span className="text-xs font-bold text-[#5C2D6A]">
-                Category: <strong className="text-[#291238]">{selectedCategory}</strong>
-              </span>
-              <span className="px-3 py-1 rounded-xl bg-[#E8D7FE] text-[#291238] font-black text-xs border border-[#D1B3FB]">
-                {filteredPoints.length} Points
-              </span>
-            </div>
-          </div>
-        </section>
-
-        {/* GROUPED EVIDENCE CARDS (ORGANIZED, POLISHED & STACKED BEAUTIFULLY) */}
-        <div className="space-y-4">
-          {filteredPoints.map((item) => (
-            <article
-              key={item.num}
-              className="p-6 rounded-3xl bg-white/95 border border-[#D1B3FB] hover:border-[#7B1FA2] shadow-xs hover:shadow-md transition-all group relative"
-            >
-              {/* Header with Number, Title, and Badges */}
-              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-3">
-                <div className="flex items-start gap-3">
-                  <span className="w-8 h-8 rounded-xl bg-[#E8D7FE] text-[#291238] font-black text-xs flex items-center justify-center shrink-0 border border-[#D1B3FB] shadow-2xs group-hover:bg-[#291238] group-hover:text-white transition-colors">
-                    #{item.num}
-                  </span>
-                  <div>
-                    <h2 className="text-lg sm:text-xl font-extrabold text-[#291238] group-hover:text-[#651576] transition-colors leading-tight">
-                      {item.title}
-                    </h2>
-                    <div className="flex flex-wrap items-center gap-2 mt-1">
-                      <span className="text-[11px] font-bold text-[#6B3D84]">
-                        {item.categoryLabel}
+                <section className="text-center pt-4 pb-12">
+                  {/* Reverent Overline Badge */}
+                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-[#D1B3FB] text-[#291238] text-xs sm:text-sm font-extrabold tracking-wide shadow-2xs mb-5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 animate-slide-up hero-element-1">
+                    <span className="text-base">✝️</span>
+                    <span>The Sacred Burial Linen of Jesus Christ</span>
+                    <span className="text-[#8B50A8]">•</span>
+                    <span className="text-[11px] uppercase tracking-wider font-black text-[#5C1E70]">
+                      Empirical Investigation
+                    </span>
+                  </div>
+        
+                  {/* Majestic Hero Headline */}
+                  <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#291238] tracking-tight leading-[1.12] mb-6 animate-slide-up hero-element-2">
+                    The Silent Witness to the{" "}
+                    <span className="relative inline-block">
+                      <span className="relative z-10 bg-gradient-to-r from-[#4A154B] via-[#7B1FA2] to-[#A0162B] bg-clip-text text-transparent">
+                        Miracle of the Resurrection
                       </span>
-                      {item.highlightTag && (
-                        <span className="text-[10px] font-black px-2 py-0.5 rounded-md bg-[#F4EDFE] text-[#5C1E70] border border-[#D1B3FB]">
-                          {item.highlightTag}
-                        </span>
-                      )}
+                      <span
+                        aria-hidden="true"
+                        className="absolute left-0 bottom-1 w-full h-3.5 bg-[#D4B9FC] -z-1 rounded-sm opacity-80"
+                      />
+                    </span>
+                  </h1>
+        
+                  {/* Polished Subtitle Text */}
+                  <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-[#4A2460] leading-relaxed mb-8 font-normal animate-slide-up hero-element-3">
+                    A comprehensive, rigorous synthesis of 30+ peer-reviewed scientific studies, NASA 3D
+                    spatial depth analyses, human hemoglobin serology, sub-micron vacuum ultraviolet
+                    physics, and unbroken historical custody documenting the authentic burial cloth of Our
+                    Lord Jesus Christ.
+                  </p>
+        
+                  {/* Quick Metrics Bar to Show the Miracle at a Glance */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto mb-8 text-left animate-slide-up hero-element-4">
+                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                      <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">Image Depth</div>
+                      <div className="text-lg sm:text-xl font-black text-[#291238] group-hover:text-[#651576] transition-colors">0.2 Microns</div>
+                      <div className="text-[10px] text-[#6B3D84] group-hover:text-[#5C2D6A] transition-colors">Primary fibril cell wall only</div>
+                    </div>
+                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                      <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">Blood Analysis</div>
+                      <div className="text-lg sm:text-xl font-black text-[#851627] group-hover:text-[#a01e2a] transition-colors">Type AB Human</div>
+                      <div className="text-[10px] text-[#6B3D84] group-hover:text-[#5C2D6A] transition-colors">Traumatic high-bilirubin clots</div>
+                    </div>
+                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                      <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">X-Ray Crystallography</div>
+                      <div className="text-lg sm:text-xl font-black text-[#291238] group-hover:text-[#651576] transition-colors">~2,000 Years</div>
+                      <div className="text-[10px] text-[#6B3D84] group-hover:text-[#5C2D6A] transition-colors">2022 WAXS De Caro Study</div>
+                    </div>
+                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                      <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">Radiant Burst</div>
+                      <div className="text-lg sm:text-xl font-black text-[#5C1E70] group-hover:text-[#7B1FA2] transition-colors">34 Trillion W</div>
+                      <div className="text-[10px] text-[#6B3D84] group-hover:text-[#5C2D6A] transition-colors">ENEA Vacuum UV Laser Physics</div>
                     </div>
                   </div>
-                </div>
+        
+                  {/* Elegant Scripture Testimony Card */}
+                  <div className="max-w-2xl mx-auto p-6 rounded-3xl bg-white/95 border-2 border-[#D1B3FB] shadow-sm text-center relative overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-slide-up hero-element-5">
+                    <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#7B1FA2] via-[#E8D7FE] to-[#A0162B]" />
+                    <p className="italic font-serif text-[#331135] text-base sm:text-lg leading-relaxed mb-2">
+                      "Simon Peter arrived and went inside the tomb. He saw the linen wrappings lying there,
+                      and the face cloth that had been on Jesus' head... Then the other disciple, who had
+                      reached the tomb first, also went in, and he saw and believed."
+                    </p>
+                    <div className="text-xs font-black text-[#6A256E] tracking-wider uppercase">
+                      — John 20:6–8 • The Catalyst of Apostolic Faith
+                    </div>
+                  </div>
+                </section>
 
-                <span className="self-start sm:self-auto text-[11px] font-black px-3 py-1 rounded-full bg-[#E8D7FE]/80 text-[#3F194E] border border-[#D1B3FB] uppercase tracking-wider shrink-0">
-                  {item.categoryGroup}
-                </span>
-              </div>
+        {/* SEARCH & DETAILED FILTER CONTROLS */}
+                <section className="mb-8 p-4 sm:p-5 rounded-3xl bg-white/95 border border-[#D1B3FB] shadow-xs hover:shadow-lg transition-all duration-300">
+                  <div className="flex flex-col sm:flex-row items-center gap-3 justify-between">
+                    {/* Search Input */}
+                    <div className="w-full sm:w-80 relative group">
+                      <input
+                        type="text"
+                        placeholder="Search across all evidence, forensics, sources..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        className="w-full px-4 py-2.5 pl-10 rounded-2xl bg-[#F8F2FE] border border-[#D1B3FB] text-sm text-[#291238] placeholder-[#79508F] focus:outline-none focus:ring-2 focus:ring-[#7B1FA2]/40 focus:border-[#7B1FA2] transition-all"
+                      />
+                      <span className="absolute left-3.5 top-3 text-sm text-[#79508F] group-focus-within:text-[#7B1FA2] transition-colors">🔍</span>
+                    </div>
+        
+                    {/* Evidence Count Pill */}
+                    <div className="flex items-center gap-2 self-stretch sm:self-auto justify-between sm:justify-end">
+                      <span className="text-xs font-bold text-[#5C2D6A]">
+                        Category: <strong className="text-[#291238]">{selectedCategory}</strong>
+                      </span>
+                      <span className="px-3 py-1 rounded-xl bg-[#E8D7FE] text-[#291238] font-black text-xs border border-[#D1B3FB] hover:scale-105 transition-transform">
+                        {filteredPoints.length} Points
+                      </span>
+                    </div>
+                  </div>
+                </section>
 
-              {/* Point Narrative */}
-              <p className="text-sm sm:text-base text-[#411F4A] leading-relaxed mb-3 pl-0 sm:pl-11 font-normal">
-                {item.detail}
-              </p>
-
-              {/* Scripture Link if present */}
-              {item.scripture && (
-                <div className="mb-3 pl-0 sm:pl-11 flex items-center gap-2 text-xs font-bold text-[#7B1FA2] bg-[#FAF5FE] p-2.5 rounded-xl border border-[#E8D7FE] inline-flex">
-                  <span>📖</span>
-                  <span>Biblical Correspondence: {item.scripture}</span>
-                </div>
-              )}
-
-              {/* Source & Study Attribution */}
-              <div className="pt-3 border-t border-[#F2E5FD] flex flex-wrap items-center justify-between gap-2 text-xs text-[#6B3D84] pl-0 sm:pl-11">
-                <span className="font-mono text-[11px] font-medium">Source: {item.source}</span>
-                {item.sourceUrl && (
-                  <a
-                    href={item.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-bold text-[#651576] hover:underline flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#F8F2FE] border border-[#D1B3FB]"
-                  >
-                    <span>Read Original Study</span>
-                    <span>↗</span>
-                  </a>
-                )}
-              </div>
-            </article>
-          ))}
+        {/* GROUPED EVIDENCE CARDS (ORGANIZED, POLISHED & STACKED BEAUTIFULLY) */}
+                <div className="space-y-4">
+                  {filteredPoints.map((item) => (
+                    <article
+                      key={item.num}
+                      className="p-6 rounded-3xl bg-white/95 border border-[#D1B3FB] hover:border-[#7B1FA2]/60 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
+                    >
+                      {/* Subtle hover glow */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#E8D7FE]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+        
+                      {/* Header with Number, Title, and Badges */}
+                      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-3 relative">
+                        <div className="flex items-start gap-3">
+                          <span className="w-8 h-8 rounded-xl bg-[#E8D7FE] text-[#291238] font-black text-xs flex items-center justify-center shrink-0 border border-[#D1B3FB] shadow-2xs group-hover:bg-[#291238] group-hover:text-white group-hover:scale-110 transition-all duration-300">
+                            #{item.num}
+                          </span>
+                          <div>
+                            <h2 className="text-lg sm:text-xl font-extrabold text-[#291238] group-hover:text-[#651576] transition-colors leading-tight">
+                              {item.title}
+                            </h2>
+                            <div className="flex flex-wrap items-center gap-2 mt-1">
+                              <span className="text-[11px] font-bold text-[#6B3D84] group-hover:text-[#5C2D6A] transition-colors">
+                                {item.categoryLabel}
+                              </span>
+                              {item.highlightTag && (
+                                <span className="text-[10px] font-black px-2 py-0.5 rounded-md bg-[#F4EDFE] text-[#5C1E70] border border-[#D1B3FB] group-hover:bg-[#7B1FA2] group-hover:text-white transition-colors">
+                                  {item.highlightTag}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+        
+                        <span className="self-start sm:self-auto text-[11px] font-black px-3 py-1 rounded-full bg-[#E8D7FE]/80 text-[#3F194E] border border-[#D1B3FB] uppercase tracking-wider shrink-0 group-hover:bg-[#291238] group-hover:text-white group-hover:border-[#291238] transition-all duration-300">
+                          {item.categoryGroup}
+                        </span>
+                      </div>
+        
+                      {/* Point Narrative */}
+                      <p className="text-sm sm:text-base text-[#411F4A] leading-relaxed mb-3 pl-0 sm:pl-11 font-normal group-hover:text-[#291238] transition-colors">
+                        {item.detail}
+                      </p>
+        
+                      {/* Scripture Link if present */}
+                      {item.scripture && (
+                        <div className="mb-3 pl-0 sm:pl-11 flex items-center gap-2 text-xs font-bold text-[#7B1FA2] bg-[#FAF5FE] p-2.5 rounded-xl border border-[#E8D7FE] inline-flex group-hover:bg-[#E8D7FE] transition-colors">
+                          <span>📖</span>
+                          <span>Biblical Correspondence: {item.scripture}</span>
+                        </div>
+                      )}
+        
+                      {/* Source & Study Attribution */}
+                      <div className="pt-3 border-t border-[#F2E5FD] flex flex-wrap items-center justify-between gap-2 text-xs text-[#6B3D84] pl-0 sm:pl-11 group-hover:border-[#D1B3FB] transition-colors">
+                        <span className="font-mono text-[11px] font-medium group-hover:text-[#5C2D6A] transition-colors">Source: {item.source}</span>
+                        {item.sourceUrl && (
+                          <a
+                            href={item.sourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-bold text-[#651576] hover:underline flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#F8F2FE] border border-[#D1B3FB] group-hover:bg-[#291238] group-hover:text-white group-hover:border-[#291238] transition-all duration-300"
+                          >
+                            <span>Read Original Study</span>
+                            <span className="transition-transform group-hover:translate-x-0.5">↗</span>
+                          </a>
+                        )}
+                      </div>
+                    </article>
+                  ))}
 
           {filteredPoints.length === 0 && (
-            <div className="text-center py-14 p-8 rounded-3xl bg-white border-2 border-[#D1B3FB] shadow-xs">
-              <span className="text-4xl mb-3 block">🔍</span>
-              <p className="text-lg font-bold text-[#291238]">
-                No points matched your search for "{searchQuery}".
-              </p>
-              <p className="text-xs text-[#6B3D84] mt-1 mb-4">
-                Try searching for terms like "blood", "laser", "Pia", "WAXS", or "John".
-              </p>
-              <button
-                onClick={() => {
-                  setSearchQuery("");
-                  setSelectedCategory("All");
-                }}
-                className="px-5 py-2.5 rounded-2xl bg-[#291238] text-white font-bold text-xs hover:bg-[#431D56] transition-all cursor-pointer"
-              >
-                Reset Search & Filter
-              </button>
-            </div>
-          )}
+                      <div className="text-center py-16 p-8 rounded-3xl bg-white/95 border-2 border-[#D1B3FB] shadow-lg">
+                        <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-[#E8D7FE] to-[#D4B9FC] flex items-center justify-center text-3xl shadow-lg">
+                          🔍
+                        </div>
+                        <p className="text-lg font-black text-[#291238] mb-2">
+                          No points matched your search for &ldquo;{searchQuery}&rdquo;.
+                        </p>
+                        <p className="text-xs text-[#6B3D84] mb-6">
+                          Try searching for terms like &ldquo;blood&rdquo;, &ldquo;laser&rdquo;, &ldquo;Pia&rdquo;, &ldquo;WAXS&rdquo;, or &ldquo;John&rdquo;.
+                        </p>
+                        <button
+                          onClick={() => {
+                            setSearchQuery("");
+                            setSelectedCategory("All");
+                          }}
+                          className="px-6 py-3 rounded-2xl bg-gradient-to-r from-[#291238] to-[#4A154B] text-white font-bold text-xs hover:from-[#4A154B] hover:to-[#291238] hover:shadow-lg hover:-translate-y-0.5 transition-all cursor-pointer"
+                        >
+                          Reset Search & Filter
+                        </button>
+                      </div>
+                    )}
         </div>
 
         {/* COMPREHENSIVE MIRACLE VERDICT CALLOUT */}
-        <section className="mt-16 rounded-3xl bg-white/95 border-2 border-[#D1B3FB] p-8 md:p-12 text-center shadow-md relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#7B1FA2] via-[#E8D7FE] to-[#A0162B]" />
-          <div className="max-w-2xl mx-auto">
-            <span className="text-4xl mb-3 inline-block">🕊️</span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#291238] tracking-tight mb-4">
-              "He Is Not Here; For He Has Risen"
-            </h2>
-            <p className="text-sm sm:text-base text-[#4A2460] leading-relaxed mb-6">
-              The Shroud of Turin is neither an artistic forgery nor a medieval relic of
-              imagination. It presents an unbreakable, interdisciplinary convergence of 1st-century
-              Syrian herringbone linen, authentic high-bilirubin human blood, anatomically exact
-              Roman scourge and crucifixion trauma, sub-micron vacuum ultraviolet radiation, and
-              limestone matching the tombs of Jerusalem. It remains the physical, radiant signature
-              of the victory of Jesus Christ over death.
-            </p>
-            <div className="text-sm font-serif italic text-[#300E34]">
-              "For us, the Shroud is the mirror of the Gospel: suffering transformed into boundless
-              love and eternal hope."
-              <span className="block not-italic font-sans font-bold uppercase tracking-widest text-[#7B1FA2] text-xs mt-1.5">
-                — Saint John Paul II
-              </span>
-            </div>
-          </div>
-        </section>
+                <section className="mt-16 rounded-3xl bg-white/95 border-2 border-[#D1B3FB] p-8 md:p-12 text-center shadow-md relative overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-500">
+                  <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#7B1FA2] via-[#E8D7FE] to-[#A0162B]" />
+                  <div className="max-w-2xl mx-auto">
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-[#E8D7FE] to-[#D4B9FC] flex items-center justify-center text-3xl shadow-lg hover:scale-110 transition-transform duration-300">
+                      🕊️
+                    </div>
+                    <h2 className="text-2xl sm:text-4xl font-black text-[#291238] tracking-tight mb-4">
+                      "He Is Not Here; For He Has Risen"
+                    </h2>
+                    <p className="text-sm sm:text-base text-[#4A2460] leading-relaxed mb-6">
+                      The Shroud of Turin is neither an artistic forgery nor a medieval relic of
+                      imagination. It presents an unbreakable, interdisciplinary convergence of 1st-century
+                      Syrian herringbone linen, authentic high-bilirubin human blood, anatomically exact
+                      Roman scourge and crucifixion trauma, sub-micron vacuum ultraviolet radiation, and
+                      limestone matching the tombs of Jerusalem. It remains the physical, radiant signature
+                      of the victory of Jesus Christ over death.
+                    </p>
+                    <div className="text-sm font-serif italic text-[#300E34]">
+                      "For us, the Shroud is the mirror of the Gospel: suffering transformed into boundless
+                      love and eternal hope."
+                      <span className="block not-italic font-sans font-bold uppercase tracking-widest text-[#7B1FA2] text-xs mt-1.5">
+                        — Saint John Paul II
+                      </span>
+                    </div>
+                  </div>
+                </section>
       </main>
 
       {/* PROFESSIONAL, HIGH-POLISH FOOTER */}
-      <footer className="relative z-10 bg-white/90 border-t-2 border-[#D1B3FB] pt-12 pb-10 text-[#4A2460]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-[#E8D7FE]">
-            {/* Column 1: Christological Identity */}
-            <div className="space-y-3">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-[#E8D7FE] border border-[#D1B3FB] flex items-center justify-center text-lg shrink-0">
-                  ✝️
+            <footer className="relative z-10 bg-white/90 border-t-2 border-[#D1B3FB] pt-12 pb-10 text-[#4A2460]">
+              <div className="max-w-5xl mx-auto px-4 sm:px-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-[#E8D7FE]">
+                  {/* Column 1: Christological Identity */}
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 group">
+                      <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#E8D7FE] to-[#D4B9FC] border border-[#D1B3FB] flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform duration-300">
+                        ✝️
+                      </div>
+                      <div>
+                        <div className="font-black text-lg text-[#291238] group-hover:text-[#651576] transition-colors">The Shroud of Turin</div>
+                        <div className="text-xs text-[#6B3D84] font-semibold">Jesus' Sacred Burial Cloth</div>
+                      </div>
+                    </div>
+                    <p className="text-xs text-[#5C2D6A] leading-relaxed">
+                      Dedicated to defending the authentic historical, forensic, and physical evidence
+                      documenting the Passion, Death, and bodily Resurrection of Jesus Christ.
+                    </p>
+                  </div>
+      
+                  {/* Column 2: Navigation Categories */}
+                  <div>
+                    <div className="text-xs font-black uppercase tracking-wider text-[#291238] mb-3">
+                      Evidence Categories
+                    </div>
+                    <ul className="text-xs space-y-2 text-[#5C2D6A]">
+                      {NAVIGATION_CATEGORIES.slice(1).map((cat) => (
+                        <li key={cat.id}>
+                          <button
+                            onClick={() => {
+                              setSelectedCategory(cat.id);
+                              window.scrollTo({ top: 400, behavior: "smooth" });
+                            }}
+                            className="hover:text-[#7B1FA2] font-semibold transition-colors flex items-center gap-1.5 cursor-pointer text-left group"
+                          >
+                            <span className="transition-transform group-hover:translate-x-0.5">{cat.icon}</span>
+                            <span>{cat.label}</span>
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+      
+                  {/* Column 3: Primary Scholarly Archives */}
+                  <div>
+                    <div className="text-xs font-black uppercase tracking-wider text-[#291238] mb-3">
+                      Scholarly Research Archives
+                    </div>
+                    <ul className="text-xs space-y-2 font-bold text-[#651576]">
+                      <li>
+                        <a
+                          href="https://www.shroud.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline flex items-center gap-1 group"
+                        >
+                          <span className="transition-colors group-hover:text-[#291238]">STURP Official Scientific Papers</span>
+                          <span className="transition-transform group-hover:translate-x-0.5">↗</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.nature.com/articles/srep15635"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline flex items-center gap-1 group"
+                        >
+                          <span className="transition-colors group-hover:text-[#291238]">Nature Scientific Reports (Genomics)</span>
+                          <span className="transition-transform group-hover:translate-x-0.5">↗</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.mdpi.com/2571-9408/5/2/47"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline flex items-center gap-1 group"
+                        >
+                          <span className="transition-colors group-hover:text-[#291238]">Heritage MDPI (2022 WAXS Dating)</span>
+                          <span className="transition-transform group-hover:translate-x-0.5">↗</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.enea.it/en"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline flex items-center gap-1 group"
+                        >
+                          <span className="transition-colors group-hover:text-[#291238]">ENEA National Laser Research</span>
+                          <span className="transition-transform group-hover:translate-x-0.5">↗</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <div className="font-black text-lg text-[#291238]">The Shroud of Turin</div>
-                  <div className="text-xs text-[#6B3D84] font-semibold">Jesus' Sacred Burial Cloth</div>
+      
+                {/* Bottom Scripture & Copyright Bar */}
+                <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6B3D84]">
+                  <div className="font-serif italic text-sm text-[#38113B] text-center sm:text-left">
+                    "I am the resurrection and the life. Whoever believes in Me, though he die, yet shall he live." — John 11:25
+                  </div>
+                  <div className="font-sans font-bold text-[#5C2D6A]">
+                    Ad Majorem Dei Gloriam
+                  </div>
                 </div>
               </div>
-              <p className="text-xs text-[#5C2D6A] leading-relaxed">
-                Dedicated to defending the authentic historical, forensic, and physical evidence
-                documenting the Passion, Death, and bodily Resurrection of Jesus Christ.
-              </p>
-            </div>
-
-            {/* Column 2: Navigation Categories */}
-            <div>
-              <div className="text-xs font-black uppercase tracking-wider text-[#291238] mb-3">
-                Evidence Categories
-              </div>
-              <ul className="text-xs space-y-2 text-[#5C2D6A]">
-                {NAVIGATION_CATEGORIES.slice(1).map((cat) => (
-                  <li key={cat.id}>
-                    <button
-                      onClick={() => {
-                        setSelectedCategory(cat.id);
-                        window.scrollTo({ top: 400, behavior: "smooth" });
-                      }}
-                      className="hover:text-[#7B1FA2] font-semibold transition-colors flex items-center gap-1.5 cursor-pointer text-left"
-                    >
-                      <span>{cat.icon}</span>
-                      <span>{cat.label}</span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Column 3: Primary Scholarly Archives */}
-            <div>
-              <div className="text-xs font-black uppercase tracking-wider text-[#291238] mb-3">
-                Scholarly Research Archives
-              </div>
-              <ul className="text-xs space-y-2 font-bold text-[#651576]">
-                <li>
-                  <a
-                    href="https://www.shroud.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline flex items-center gap-1"
-                  >
-                    <span>STURP Official Scientific Papers</span>
-                    <span>↗</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.nature.com/articles/srep15635"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline flex items-center gap-1"
-                  >
-                    <span>Nature Scientific Reports (Genomics)</span>
-                    <span>↗</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.mdpi.com/2571-9408/5/2/47"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline flex items-center gap-1"
-                  >
-                    <span>Heritage MDPI (2022 WAXS Dating)</span>
-                    <span>↗</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.enea.it/en"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline flex items-center gap-1"
-                  >
-                    <span>ENEA National Laser Research</span>
-                    <span>↗</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bottom Scripture & Copyright Bar */}
-          <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#6B3D84]">
-            <div className="font-serif italic text-sm text-[#38113B] text-center sm:text-left">
-              "I am the resurrection and the life. Whoever believes in Me, though he die, yet shall he live." — John 11:25
-            </div>
-            <div className="font-sans font-bold text-[#5C2D6A]">
-              Ad Majorem Dei Gloriam
-            </div>
-          </div>
-        </div>
-      </footer>
+            </footer>
     </div>
   );
 }
