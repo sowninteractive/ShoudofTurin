@@ -472,7 +472,7 @@ export default function Index() {
         {/* COMMANDING, PROFESSIONAL & BEAUTIFULLY POLISHED HERO SECTION */}
                 <section className="text-center pt-4 pb-12">
                   {/* Reverent Overline Badge */}
-                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-[#D1B3FB] text-[#291238] text-xs sm:text-sm font-extrabold tracking-wide shadow-2xs mb-5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 animate-slide-up hero-element-1">
+                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-[#D1B3FB] text-[#291238] text-xs sm:text-sm font-extrabold tracking-wide shadow-2xs mb-5 hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-out animate-slide-up hero-element-1 hover:ring-2 hover:ring-[#7B1FA2]/20">
                     <span className="text-base">✝️</span>
                     <span>The Sacred Burial Linen of Jesus Christ</span>
                     <span className="text-[#8B50A8]">•</span>
@@ -482,7 +482,7 @@ export default function Index() {
                   </div>
         
                   {/* Majestic Hero Headline */}
-                  <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#291238] tracking-tight leading-[1.12] mb-6 animate-slide-up hero-element-2">
+                  <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#291238] tracking-tight leading-[1.12] mb-6 animate-slide-up hero-element-2 group cursor-default hover:scale-102 transition-transform duration-300 ease-out">
                     The Silent Witness to the{" "}
                     <span className="relative inline-block">
                       <span className="relative z-10 bg-gradient-to-r from-[#4A154B] via-[#7B1FA2] to-[#A0162B] bg-clip-text text-transparent">
@@ -505,30 +505,30 @@ export default function Index() {
         
                   {/* Quick Metrics Bar to Show the Miracle at a Glance */}
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto mb-8 text-left animate-slide-up hero-element-4">
-                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-                      <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">Image Depth</div>
+                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-2xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out cursor-pointer hover:ring-2 hover:ring-[#7B1FA2]/20">
+                                          <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">Image Depth</div>
                       <div className="text-lg sm:text-xl font-black text-[#291238] group-hover:text-[#651576] transition-colors">0.2 Microns</div>
                       <div className="text-[10px] text-[#6B3D84] group-hover:text-[#5C2D6A] transition-colors">Primary fibril cell wall only</div>
                     </div>
-                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-                      <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">Blood Analysis</div>
+                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-2xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out cursor-pointer hover:ring-2 hover:ring-[#7B1FA2]/20">
+                                          <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">Blood Analysis</div>
                       <div className="text-lg sm:text-xl font-black text-[#851627] group-hover:text-[#a01e2a] transition-colors">Type AB Human</div>
                       <div className="text-[10px] text-[#6B3D84] group-hover:text-[#5C2D6A] transition-colors">Traumatic high-bilirubin clots</div>
                     </div>
-                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-                      <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">X-Ray Crystallography</div>
+                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-2xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out cursor-pointer hover:ring-2 hover:ring-[#7B1FA2]/20">
+                                          <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">X-Ray Crystallography</div>
                       <div className="text-lg sm:text-xl font-black text-[#291238] group-hover:text-[#651576] transition-colors">~2,000 Years</div>
                       <div className="text-[10px] text-[#6B3D84] group-hover:text-[#5C2D6A] transition-colors">2022 WAXS De Caro Study</div>
                     </div>
-                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-                      <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">Radiant Burst</div>
+                    <div className="group p-4 rounded-2xl bg-white/90 border border-[#D1B3FB] shadow-2xs hover:shadow-2xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-out cursor-pointer hover:ring-2 hover:ring-[#7B1FA2]/20">
+                                          <div className="text-[11px] font-bold text-[#6B3D84] uppercase tracking-wider group-hover:text-[#7B1FA2] transition-colors">Radiant Burst</div>
                       <div className="text-lg sm:text-xl font-black text-[#5C1E70] group-hover:text-[#7B1FA2] transition-colors">34 Trillion W</div>
                       <div className="text-[10px] text-[#6B3D84] group-hover:text-[#5C2D6A] transition-colors">ENEA Vacuum UV Laser Physics</div>
                     </div>
                   </div>
         
                   {/* Elegant Scripture Testimony Card */}
-                  <div className="max-w-2xl mx-auto p-6 rounded-3xl bg-white/95 border-2 border-[#D1B3FB] shadow-sm text-center relative overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-slide-up hero-element-5">
+                  <div className="max-w-2xl mx-auto p-6 rounded-3xl bg-white/95 border-2 border-[#D1B3FB] shadow-sm text-center relative overflow-hidden hover:shadow-2xl hover:-translate-y-2 hover:scale-102 transition-all duration-300 ease-out animate-slide-up hero-element-5 hover:ring-2 hover:ring-[#7B1FA2]/20">
                     <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#7B1FA2] via-[#E8D7FE] to-[#A0162B]" />
                     <p className="italic font-serif text-[#331135] text-base sm:text-lg leading-relaxed mb-2">
                       "Simon Peter arrived and went inside the tomb. He saw the linen wrappings lying there,
@@ -542,7 +542,7 @@ export default function Index() {
                 </section>
 
         {/* SEARCH & DETAILED FILTER CONTROLS */}
-                <section className="mb-8 p-4 sm:p-5 rounded-3xl bg-white/95 border border-[#D1B3FB] shadow-xs hover:shadow-lg transition-all duration-300">
+                <section className="mb-8 p-4 sm:p-5 rounded-3xl bg-white/95 border border-[#D1B3FB] shadow-xs hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-out">
                   <div className="flex flex-col sm:flex-row items-center gap-3 justify-between">
                     {/* Search Input */}
                     <div className="w-full sm:w-80 relative group">
@@ -572,11 +572,13 @@ export default function Index() {
                 <div className="space-y-4">
                   {filteredPoints.map((item) => (
                     <article
-                      key={item.num}
-                      className="p-6 rounded-3xl bg-white/95 border border-[#D1B3FB] hover:border-[#7B1FA2]/60 shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden"
-                    >
-                      {/* Subtle hover glow */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-[#E8D7FE]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                                          key={item.num}
+                                          className="p-6 rounded-3xl bg-white/95 border border-[#D1B3FB] hover:border-[#7B1FA2]/60 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:scale-101 transition-all duration-300 ease-out group relative overflow-hidden hover:ring-2 hover:ring-[#7B1FA2]/20"
+                                        >
+                                          {/* Subtle hover glow with enhanced gradient */}
+                                          <div className="absolute inset-0 bg-gradient-to-br from-[#E8D7FE]/40 via-[#D4B9FC]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                                          {/* Top accent line on hover */}
+                                          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#7B1FA2]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
         
                       {/* Header with Number, Title, and Badges */}
                       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-3 relative">
